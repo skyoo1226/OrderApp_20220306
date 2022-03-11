@@ -28,5 +28,6 @@ class MyProfileFragment : Fragment() {
 
 //        여기에 닉네임 변경 버튼을 누르면 실행 되는 코드 입력 해야 될것 같음.
 
+    }
 
 }
