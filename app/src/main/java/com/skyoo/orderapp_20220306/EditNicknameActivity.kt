@@ -10,7 +10,20 @@ class EditNicknameActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_nickname)
+        setupEvents()
+        setValues()
+    }
 
+    fun setupEvents() {
+        btnSave.setOnClickListener {
+            val inputNickname = btnEditNickname.text.toString()
+            val resultIntent = Intent()
+            resultIntent.putExtra("nickname", inputNickname)
+            setResult(RESULT_OK, resultIntent)
+            finish()
+        }
+    }
+    /**
         btnSave.setOnClickListener {
             val inputNickname = btnEditNickname.text.toString()
             val resultintent = Intent()
@@ -20,6 +33,10 @@ class EditNicknameActivity : AppCompatActivity() {
 
             finish()
         }
+
+    **/
+
+    fun setValues() {
 
     }
 }

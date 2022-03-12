@@ -3,6 +3,7 @@
     package="com.skyoo.orderapp_20220306">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OrderApp_20220306"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ViewStoreDetailActivity"
+            android:exported="false" />
         <activity
             android:name=".EditNicknameActivity"
             android:exported="false" />
